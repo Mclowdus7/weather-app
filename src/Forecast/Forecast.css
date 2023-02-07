@@ -1,0 +1,11 @@
+.forecast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.icon {
+    height: 150px;
+    width: 150px;
+}
