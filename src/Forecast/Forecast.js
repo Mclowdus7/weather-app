@@ -54,8 +54,9 @@ function Forecast() {
         <input type='text' onChange={event => setZip(event.target.value)} placeholder='Enter your zip code' />
         
        <img className='icon' src={icon}/>
-        <p>{forecast?.name}</p>
+        <h2>{forecast?.name}</h2>
         <p>{forecast?.main?.temp}</p>
+        <p>{forecast?.weather[0]?.description}</p>
         <button onClick={getForecast}>Get Forecast</button>
     </div>
   )
